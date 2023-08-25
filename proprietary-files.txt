@@ -23,6 +23,63 @@ vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/lib64/libgoodixhwfingerprint.so
 -vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
+# GNSS
+-vendor/bin/hw/android.hardware.gnss-service.mediatek
+-vendor/bin/mnld
+-vendor/bin/mtk_agpsd
+vendor/etc/init/android.hardware.gnss-service.mediatek.rc
+vendor/etc/init/mtk_agpsd_p.rc
+-vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mediatek.xml
+-vendor/etc/vintf/manifest/gnss@2.1-service.xml
+-vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
+-vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
+-vendor/lib64/hw/gps.default.so
+-vendor/lib64/libDR.so
+-vendor/lib64/libmnl.so
+
+# GNSS Configs
+vendor/etc/gnss/agps_profiles_conf2.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Claro_Peru.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Entel_Peru.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_KDDI.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SK_Telecom.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SoftBank.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Sprint.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
+vendor/etc/slp_conf
+
+# GNSS (Certs)
+vendor/etc/security/cacerts_supl/09127afb.0
+vendor/etc/security/cacerts_supl/111e6273.0
+vendor/etc/security/cacerts_supl/3ad48a91.0
+vendor/etc/security/cacerts_supl/4469e942.0
+vendor/etc/security/cacerts_supl/5d1ca92f.0
+vendor/etc/security/cacerts_supl/7651b327.0
+vendor/etc/security/cacerts_supl/848ea856.0
+vendor/etc/security/cacerts_supl/c542733d.0
+vendor/etc/security/cacerts_supl/cec771d5.0
+vendor/etc/security/cacerts_supl/e99505d2.0
+vendor/etc/security/cacerts_supl/f336e3d1.0
+vendor/etc/security/cacerts_supl/lab/18dc3a8d.0
+vendor/etc/security/cacerts_supl/lab/1bc5ca0c.0
+vendor/etc/security/cacerts_supl/lab/1bc5ca0c.1
+vendor/etc/security/cacerts_supl/lab/2cbfcc3a.0
+vendor/etc/security/cacerts_supl/lab/35ef1c14.0
+vendor/etc/security/cacerts_supl/lab/399e7759.0
+vendor/etc/security/cacerts_supl/lab/586933d9.0
+vendor/etc/security/cacerts_supl/lab/66272d0d.0
+vendor/etc/security/cacerts_supl/lab/6f1dbe5e.0
+vendor/etc/security/cacerts_supl/lab/b5805141.0
+vendor/etc/security/cacerts_supl/lab/b805b58a.0
+vendor/etc/security/cacerts_supl/lab/ed7b215e.0
+vendor/etc/security/cacerts_supl/lab/ef4b31e6.0
+
 # Gatekeeper
 -vendor/lib64/hw/gatekeeper.beanpod.so
 

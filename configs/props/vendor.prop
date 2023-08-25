@@ -1,3 +1,6 @@
+# GNSS
+ro.vendor.mtk_log_hide_gps=1
+
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
